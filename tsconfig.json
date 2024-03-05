@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "es6",
+      "es2020.bigint",
+      "es2020.string"
+    ],
+    "checkJs": false,
+    "moduleResolution": "NodeNext",
+    "target": "ES2022",
+    "module": "NodeNext",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": false,
+    "outDir": "dist",
+    "baseUrl": "./src",
+    "rootDir": ".",
+    "noImplicitAny": false,
+    "paths": {
+      "@controllers/*": [
+        "./controllers/*"
+      ],
+      "@routes/*": [
+        "./routes/*"
+      ],
+      "@middlewares/*": [
+        "./middlewares/*"
+      ],
+      "@utils/*": [
+        "./utils/*"
+      ]
+    }
+  },
+  "include": [
+    "./src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
